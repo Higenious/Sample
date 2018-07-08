@@ -1,0 +1,26 @@
+<h3>Add something for Me here!</h3>
+
+<form>
+  <div class="form-group">
+    
+    <div class="col-sm-5 col-xs-10">
+         <h4>Upload File</h4>
+    </div>
+        
+    <div ng-controller="UserController">
+    <!-- <input type="file" name="File Upload" id="FileUpload" accept=".csv" /> -->
+    <input type="file" type="file" name="csvFile" accept=".csv" >                            
+    </div>
+    
+   <button type="submit" class="btn btn-primary btn-large mt10" style="margin-top: 10" ng-click="uploadFiles()">Save</button>
+
+  </div>
+</form>
+
+
+<script>
+    // Open File Dilog box onclick upload icon
+    $('#openFile').click(function () { $('#csvFile').trigger('click'); });
+    $('#openMultipleFile').click(function () { $('#documentFile').trigger('click'); });
+
+</script>
